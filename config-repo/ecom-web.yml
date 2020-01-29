@@ -1,0 +1,10 @@
+spring:
+  application:
+      name: ecom-web
+server:
+  port: 8080
+ecom:
+   apigateway:
+    url: http://localhost:9000
+
+eureka.client.serviceUrl.defaultZone: http://localhost:8761/eureka/

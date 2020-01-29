@@ -1,0 +1,14 @@
+spring:
+ application:
+     name: ecom-delivery
+server:
+  port: 8087
+eureka.client.serviceUrl.defaultZone: http://localhost:8761/eureka/
+
+
+ecom.amqp.rabbit.address: localhost:5672
+ecom.amqp.rabbit.username: guest
+ecom.amqp.rabbit.password: guest
+ecom.amqp.rabbit.vhost: /
+ecom.amqp.rabbit.exchange: Ecom-exchange
+ecom.amqp.rabbit.queue: Ecom-delivery-queue

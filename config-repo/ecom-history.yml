@@ -1,0 +1,17 @@
+---
+spring:
+ application:
+     name: ecom-history
+server:
+  port: 8085
+eureka.client.serviceUrl.defaultZone: http://localhost:8761/eureka/
+
+
+spring.data.mongodb.uri: mongodb://localhost:27017/ecom
+
+ecom.amqp.rabbit.address: localhost:5672
+ecom.amqp.rabbit.username: guest
+ecom.amqp.rabbit.password: guest
+ecom.amqp.rabbit.vhost: /
+ecom.amqp.rabbit.exchange: Ecom-exchange
+ecom.amqp.rabbit.queue: Ecom-order-histo-queue

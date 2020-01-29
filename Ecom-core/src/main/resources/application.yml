@@ -1,0 +1,17 @@
+
+spring:
+ application:
+     name: ecom-core
+ cloud.config:
+   failFast: true
+   retry:
+     initialInterval: 3000
+     multiplier: 1.3
+     maxInterval: 10000
+     maxAttempts: 20
+   uri: http://localhost:8888
+
+
+server:
+  port: 8084
+

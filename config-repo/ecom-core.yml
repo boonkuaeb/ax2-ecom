@@ -1,0 +1,27 @@
+spring:
+ application:
+     name: ecom-core
+server:
+  port: 8084
+eureka.client.serviceUrl.defaultZone: http://localhost:8761/eureka/
+
+ecom.amqp.rabbit.address: localhost:5672
+ecom.amqp.rabbit.username: guest
+ecom.amqp.rabbit.password: guest
+ecom.amqp.rabbit.vhost: /
+ecom.amqp.rabbit.exchange: Ecom-exchange
+ecom.amqp.rabbit.queue: Ecom-core-queue
+
+jpa:
+  database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+
+spring.data.mongodb.uri: mongodb://localhost:27017/ecom
+
+
+spring.data.datasource.url: jdbc:mysql://localhost/ecom?useSSL=false
+spring.data.datasource.username: root
+spring.data.datasource.password: rootpwd
+spring.data.datasource.driver-class-name: com.mysql.cj.jdbc.Driver
+
+
+

@@ -1,0 +1,22 @@
+spring:
+ application:
+     name: ecom-product
+server:
+  port: 8081
+eureka.client.serviceUrl.defaultZone: http://localhost:8761/eureka/
+
+
+
+spring.data.mongodb.uri: mongodb://localhost:27017/ecom
+
+
+ecom.amqp.rabbit.address: localhost:5672
+ecom.amqp.rabbit.username: guest
+ecom.amqp.rabbit.password: guest
+ecom.amqp.rabbit.vhost: /
+ecom.amqp.rabbit.exchange: Ecom-exchange
+ecom.amqp.rabbit.queue: Ecom-product-queue
+
+
+ecom:
+  product.img.location: /Users/boonkuaeboonsutta/Documents/Learning/practical-microservices-architectural-patterns/Ax2-Ecom-No-Security/Ecom-xtra-setup/productImg

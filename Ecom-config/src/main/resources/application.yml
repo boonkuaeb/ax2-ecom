@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: ecom-config
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          search-locations:  file:/Users/boonkuaeboonsutta/Documents/Learning/practical-microservices-architectural-patterns/Ax2-Ecom-No-Security/config-repo
+
+server:
+  port: 8888
+
+#file:/home/myname/Ecom-WS/Ecom-NoSec/Ecom/config-repo
